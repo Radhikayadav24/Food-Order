@@ -1,0 +1,370 @@
+/* Navbar.css
+
+.Header__HeaderContainer-sc-wf2f87-2 {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.style__HeaderIconContainer-sc-84lkjh-4 {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  gap: 10px;
+}
+
+.btn button {
+  padding: 12px 16px;
+  background-color:  #2b296c; 
+  color: #ffffff; 
+  margin-left: 80px;
+  border: none;
+  cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --font: 'Kalam', 'Source Code Pro', monospace;
+}
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+}
+
+.btnn {
+  display: flex;
+}
+
+button {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 50px;
+  background-color: #F15700;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+.foodimg {
+  width: 80px; /* Adjust the size as needed */
+  height: 50px;
+  /* margin-left: 50px; */
+}
+
+/* Add your other styles here #2b296c*/
+
+/* .bgt{
+ 
+margin-left:600px;
+} */
+
+.min{
+  background-color: white;
+  width: 100vw;
+}
+/* Dropdown container */
+.dropdown-container {
+
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.log {
+  background-color: #f1fcf2;
+  color: rgb(15, 13, 13);
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 78%;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Change color on hover */
+.dropdown-content button:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown when hovering over the button */
+.dropdown-container:hover .dropdown-content {
+  display: block;
+  width: 166px;
+}
+/* Your existing styles here */
+.mainHeaderInnerDiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.navbar{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar{
+    display: unset;
+  }
+  .btnn {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    display: none;
+  }
+
+  button {
+    margin: 10px 0;
+  }
+
+  /* .foodimg {
+    margin-left: 86px;
+  } */
+
+  .bgt {
+    display: none;
+    margin-left: 0;
+  }
+
+  /* Adjust other styles as needed for smaller screens */
+}
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Adjustments for screens less than 400px */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    padding: 10px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Additional adjustments for screens less than 768px */
+@media screen and (max-width: 768px) {
+  /* .btnn {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  } */
+
+  button {
+    margin: 10px 0;
+  }
+
+  /* .foodimg {
+    margin-left: 70px;
+  } */
+
+  .bgt {
+    margin-left: 0;
+  }
+
+}
+
+.nav__logo {
+  color: var(--first-color);
+  transition: color 0.4s;
+  font-size: var(--h2-font-size);
+  font-family: var(--second-font);
+ }
+ 
+ .nav__toggle,
+ .nav__close {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  cursor: pointer;
+ }
+ 
+ .nav__cta {
+  background-color: var(--first-color);
+  color: var(--title-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 0.75rem 1.5rem;
+ }
+ .nav__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+ }
+ 
+ .nav__link {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  transition: color 0.4s;
+ }
+ 
+ .nav__link:hover {
+  color: var(--first-color);
+ }
+ 
+ .nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+ }
+ 
+ .show-menu {
+  right: 0;
+ }
+
+ @media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: hsla(0, 0%, 6%, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: 80%;
+    height: 100%;
+    padding: 6rem 3rem 0;
+    transition: right 0.4s;
+  }
+ }
+ 
+
+
+ /* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Add space between items */
+  padding: 10px 20px; /* Add padding for better spacing */
+}
+
+/* Toggle button */
+.nav__toggle {
+  /* margin-left: 320px; */
+  display: none; /* Hide toggle button by default for non-mobile */
+  cursor: pointer;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  display: none; /* Hide mobile menu by default */
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Background color of the mobile menu */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+  z-index: 1;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu ul li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  .nav__toggle {
+    display: block; /* Display toggle button for mobile */
+  }
+
+  .mobile-menu {
+    display: block; /* Display mobile menu for mobile */
+  }
+}

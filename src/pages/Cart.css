@@ -1,0 +1,269 @@
+/* .CartContainer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .res {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+ 
+  .btppp {
+    margin-bottom: 20px;
+    display: flex;
+    margin-top: 20px;
+}
+  .tbl {
+    width: 100%;
+  }
+  
+  .mainsss {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .imggg {
+    flex: 0 0 55%;
+  }
+  
+  .imggg img {
+    width: 50%;
+    height: auto;
+  }
+  
+  .pppp {
+    flex: 1;
+    padding: 0 20px; 
+  }
+  
+  .incdecbtn {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .quantity {
+    margin: 0 10px; }
+  
+  .removebtn {
+    margin-top: 10px;
+  }
+  .pppp {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  
+  .ns{
+    display: block;
+
+  }
+  .name,
+  .subtitle,
+  .price,
+  .incdecbtn {
+    flex: 1; 
+    margin-right: -50px; 
+  }
+  
+  .incdecbtn {
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity {
+    margin: 0 10px; 
+  }
+  
+   .increment, .decrement {
+    background-color: #cddbe6;
+    color: rgb(43, 5, 5);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+  /* Media query for smaller screens 
+  @media screen and (max-width: 768px) {
+    .mainsss {
+      flex-direction: column;
+    }
+  
+    .imggg {
+      flex: 0 0 100%;
+    }
+  
+    .pppp {
+      flex: 1;
+      padding: 0;
+      text-align: center;
+    }
+  
+    .incdecbtn {
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .btppp{
+        display: block;
+    }
+  }
+   */
+
+  .mainsss {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    box-shadow: 0px 3px 50px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+  }
+
+  .imggg > img {
+  border-radius: 12px;
+  height: 130px;
+  width: 150px;
+  }
+
+  .pppp {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    /* margin-top: 10px;
+    text-align: left; */
+  }
+
+  .incdecbtn {
+    /* margin-left: 200px; */
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+.tamt{
+  /* margin-left: 450px; */
+}
+
+.increment {
+  display: flex;
+  justify-content: center;
+  background-color: #cddbe6;
+  color: rgb(43, 5, 5);
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  align-items: center;
+
+  height: 20px;
+  width: 20px;
+}
+.increment > img{
+  height: 12px !important;
+  width: 12px !important;
+}
+.res{
+  display: flex;
+  justify-content: center;
+}
+.CartContainer {
+  width: 75vw;
+  /* height: 85%; */
+  /* background-color: #ffffff; */
+  border-radius: 20px;
+  /* box-shadow: 0px 25px 40px #1687d933; */
+  margin: 0 auto;
+}
+.gtp {
+  font-size: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* For screens up to a maximum width of 768px */
+
+.cartTable{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 40px;
+}
+
+.imggg{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .cartTable{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .jjjj{
+    /* flex-direction: column; */
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+  .mainsss {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .imggg {
+    justify-self: center;
+  }
+
+  .pppp {
+    text-align: center;
+  }
+
+  .incdecbtn {
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .btppp {
+    display: block;
+    margin-top: 20px;
+}
+.tamt{
+  margin-left: 0px;
+}
+.gtp{
+  text-align: center;
+  /* background-color: black;
+  color: white; */
+}
+}
+.removebtnn{
+       min-height: 0vh; 
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      text-align: center;
+       margin-right: 0px;
+
+}
+.ConfirmCancelbtn{
+  display: flex;
+  justify-content: center;
+}
